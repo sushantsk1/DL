@@ -1,0 +1,72 @@
+Normalization in deep learning scales and preprocesses data for consistent input.
+Test-train splits data into training and testing subsets to assess model performance.
+Labeled data has known output labels for supervised learning.
+Unlabeled data lacks output labels and is used in unsupervised learning.
+Supervised learning uses labeled data to train models with known outcomes.
+Unsupervised learning operates with unlabeled data to discover hidden patterns.
+Independent variables affect the dependent variables in modeling.
+Flatten: In deep learning, "flatten" is a layer that converts multidimensional data, such as images, into a one-dimensional vector, making it suitable for feeding into fully connected layers.
+
+Sequential: A "sequential" model is a linear stack of neural network layers, where each layer follows the previous one, and it's a common choice for building simple feedforward neural networks.
+ReLU (Rectified Linear Unit): ReLU is an activation function commonly used in neural networks. It introduces non-linearity by outputting the input for positive values and zero for negative values, helping the network learn complex patterns.
+Activation Function: Activation functions like ReLU introduce non-linearity in neural networks, allowing them to model complex relationships between inputs and outputs. They enable the network to learn and represent more intricate patterns and relationships in data.
+
+These components are used in deep learning for various reasons:
+
+Flatten: It's used to prepare input data in a suitable format, often required for fully connected layers in the network.
+Sequential: It provides an easy and structured way to build neural networks by defining layers sequentially, making it easier to understand and manage the model architecture.
+ReLU: ReLU is popular because it helps mitigate the vanishing gradient problem, allowing for faster training and better convergence in deep networks. It also introduces non-linearity, enabling the network to learn complex functions.
+Activation Functions: These functions introduce non-linearity, enabling neural networks to approximate and learn complex mappings between inputs and outputs, which is essential for solving a wide range of real-world problems.
+Epoch: An epoch in deep learning refers to one complete pass through the entire training dataset. It's a training cycle where the model processes and learns from every sample in the dataset once. Training over multiple epochs allows the model to refine its weights and improve its performance.
+Batch Size: Batch size is the number of training examples used in one iteration or forward and backward pass through the neural network. It is a hyperparameter that determines how many data points are used before updating the model's weights. Larger batch sizes can speed up training but may require more memory, while smaller batch sizes provide a more stochastic training process.
+Validation Data: Validation data is a subset of the dataset that is not used for training but is used to evaluate the model's performance during training. It helps in monitoring how well the model generalizes to unseen data and prevents overfitting. The model's performance on the validation data is typically measured using metrics like accuracy or loss.
+Verbose = 0: In the context of training deep learning models, the "verbose" parameter determines the level of information and feedback displayed during training. Setting it to 0 usually means that no training progress information will be displayed, while setting it to 1 or higher values will provide different levels of progress updates.
+MNIST and CIFAR-10: MNIST and CIFAR-10 are popular datasets used in deep learning for image classification tasks. MNIST contains grayscale images of hand-written digits, while CIFAR-10 contains color images of various objects. These datasets are often used for benchmarking and testing different neural network architectures and training techniques.
+Stochastic, in the context of deep learning and machine learning, refers to a process that involves randomness or randomness in sampling data.
+In stochastic gradient descent (SGD), for example, instead of using the entire training dataset in each epoch (as in batch gradient descent), only a random subset or a single data point is used to update the model's weights in each iteration. This introduces a degree of randomness into the optimization process, which can help escape local minima and improve convergence speed.
+
+"weight" refers to a parameter within a neural network that represents the strength of a connection between two neurons or nodes. These weights are crucial for the neural network to make predictions or decisions based on the input data.
+
+Loss Function:
+A loss function, also known as a cost function or objective function, is a mathematical measure used to quantify the difference between the predicted values and the actual target values. The goal during training a machine learning or deep learning model is to minimize the loss function. This optimization process involves adjusting the model's parameters (e.g., weights and biases) to make the loss as small as possible.
+Accuracy:
+Accuracy is a common evaluation metric used in classification tasks. It measures the proportion of correctly classified instances out of the total number of instances in the dataset.
+The accuracy is expressed as a percentage, where a higher accuracy indicates better model performance. For example, an accuracy of 90% means that the model correctly classifies 90% of the instances.
+
+To increase accuracy and reduce the loss function:
+Improve data quality and preprocessing.
+Experiment with different model architectures and hyperparameters.
+Use regularization techniques to prevent overfitting.
+Consider using more data and advanced architectures.
+Regarding the number of epochs:
+Increasing epochs may improve training, but it can also lead to overfitting if not controlled. It's crucial to monitor validation metrics to determine the optimal number of epochs for your specific task.
+
+Overfitting:
+Overfitting occurs when a model learns the training data too well, capturing noise and fluctuations rather than the underlying patterns. As a result, the model performs well on the training data but poorly on unseen or test data.
+Signs of overfitting include a high training accuracy but a significantly lower test accuracy, as well as a low training loss and a high test loss.
+Underfitting:
+Underfitting occurs when a model is too simple to capture the underlying patterns in the data. The model performs poorly both on the training data and the test data.
+Signs of underfitting include low training and test accuracy, as well as a high training and test loss.
+
+CBOW (Continuous Bag of Words): A word embedding model used for predicting a target word based on its context words.
+SGD (Stochastic Gradient Descent): An optimization algorithm that updates model parameters using small, randomly sampled batches of data to improve convergence speed.
+Gradient Descent: An optimization technique that iteratively adjusts model parameters in the direction of steepest descent to minimize the loss function.
+Stochastic Gradient Descent (SGD): A variant of gradient descent that updates parameters using random mini-batches of data, introducing stochasticity for faster training.
+Feedforward: A type of neural network architecture where information flows in one direction, from input to output, without feedback loops, commonly used in tasks like image and text classification.
+
+CBOW (Continuous Bag of Words) model predicts a target word based on the context of the surrounding words in a sentence or text. It is trained using a feedforward neural network where the input is a set of context words, and the output is the target word.
+
+Anomaly Detection: Anomaly detection is the process of identifying data points that deviate significantly from the norm or expected behavior.
+Autoencoder: An autoencoder is a neural network architecture used for unsupervised learning, where the network learns to encode input data into a lower-dimensional representation and then decode it to reconstruct the original data.
+Image Classification: Image classification is the task of assigning labels or categories to images based on their content, often performed using deep learning models like convolutional neural networks (CNNs).
+Encoder: An encoder is the part of an autoencoder that compresses input data into a lower-dimensional representation, typically called the "encoding" or "latent space."
+Decoder: A decoder is the part of an autoencoder that reconstructs data from the lower-dimensional encoding, aiming to produce an output that closely resembles the original input data.
+
+Latent representation refers to a compact and abstract representation of data that captures essential features or information from the original data. It is typically obtained through techniques like dimensionality reduction, encoding, or feature learning, such as in the context of autoencoders or other unsupervised learning methods. Latent representations aim to retain relevant information while reducing the data's complexity, making it easier for machine learning models to work with and extract meaningful patterns from the data.
+
+Adam: Adam is a popular optimization algorithm used in training deep neural networks. It combines the benefits of both the AdaGrad and RMSprop algorithms and is known for its efficiency in adjusting learning rates for different model parameters during training.
+Normalization: Normalization in the context of data preprocessing typically involves scaling or transforming data to have a common scale or distribution. It can make data more suitable for training machine learning models.
+D-Scale Normalization: "D-Scale" normalization is not a commonly recognized term in machine learning. It's possible that it refers to a specific method or technique related to data scaling or normalization, but without more context, it's challenging to provide a concise explanation.
+
+Adam is known for its effectiveness in adjusting the learning rates for different model parameters during training. It does this by maintaining two moving averages for each parameter: the first moment (mean) and the second moment (uncentered variance). These moving averages help the algorithm adaptively change the learning rates for each parameter based on the history of gradients.
+
